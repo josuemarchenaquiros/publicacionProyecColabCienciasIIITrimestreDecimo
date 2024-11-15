@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongos</title>
+    <link rel="stylesheet" href="css/index-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+
+
+<body>
+    <header>
+        <div id="flex-header">
+            <a href="index.html">Inicio <i class="fa-solid fa-house fa-bounce"></i></a>
+            <a href="aves.html">Aves <i class="fa-brands fa-earlybirds fa-bounce"></i></a>
+            <a href="mamiferos.html">Mamíferos <i class="fa-solid fa-hippo fa-bounce"></i></a>
+            <a href="pagina_abejas.html">Insectos <i class="fa-solid fa-bugs fa-bounce"></i></a>
+            <a href="hongos.html">Hongos <i class="fa-solid fa-bell-concierge fa-bounce"></i></a>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="header-img-div">
+        <section id="header-img" class="carousel">
+            <div class="carousel-images">
+                <img src="https://images.pexels.com/photos/757292/pexels-photo-757292.jpeg?cs=srgb&dl=pexels-ekamelev-757292.jpg&fm=jpg"
+                    alt="Imagen 1">
+                <img src="img/fondo 2.png" alt="Imagen 2">
+                <img src="img/fondo 3.png" alt="Imagen 3">
+                <img src="img/fondo 7.png" alt="Imagen 4">
+                <img src="img/fondo 5.png" alt="Imagen 5">
+            </div>
+        </section>
+    </div>
+    <div id="flex-diplaycards">
+        <div class="sub-flex-displaycards">
+            <div class="card" id="card1" onclick="mostrarInfo(1)">
+                <p>Geastrum saccatum</p>
+                <div class="imagendivsi">
+                    <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/1196356/original.jpg">
+                </div>
+            </div>
+            <div class="card" id="card2" onclick="mostrarInfo(2)">
+                <p>Marasmius berteroi</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Marasmius berteroi - Hongos paracaídas y rehiletes.png">
+                </div>
+            </div>
+            <div class="card" id="card3" onclick="mostrarInfo(3)">
+                <p>Oudemansiella canarii</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Oudemansiella canarii - Hongo de Palo.png">
+                </div>
+            </div>
+            <div class="card" id="card4" onclick="mostrarInfo(4)">
+                <p>Coqueina tricholoma</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Coqueina tricholoma- Hongo de Copa Rosada.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="sub-flex-displaycards">
+            <div class="card" id="card5" onclick="mostrarInfo(5)">
+                <p>Cyathus striatus</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Cyathus striatus (nido de pajaros).png">
+                </div>
+            </div>
+            <div class="card" id="card6" onclick="mostrarInfo(6)">
+                <p>Foraminispora rugosa </p>
+                <div class="imagendivsi">
+                    <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/337154420/original.jpeg">
+                </div>
+            </div>
+            <div class="card" id="card7" onclick="mostrarInfo(7)">
+                <p>Mycena holoporphyra</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Mycena holoporphyra(Mycenaceae).png">
+                </div>
+            </div>
+            <div class="card" id="card8" onclick="mostrarInfo(8)">
+                <p>Coriolopsis polyzona</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Coriolopsis polyzona - Hongo oreja de palo.png">
+                </div>
+            </div>
+        </div>
+        <div class="sub-flex-displaycards">
+            <div class="card" id="card9" onclick="mostrarInfo(9)">
+                <p>Lactifluus deceptivus</p>
+                <div class="imagendivsi">
+                    <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/5769431/large.jpeg">
+                </div>
+            </div>
+            <div class="card" id="card10" onclick="mostrarInfo(10)">
+                <p>Phallus indusiatus</p>
+                <div class="imagendivsi">
+                    <img src="img/Hongos Diseño/Phallus indusiatus (Hongo de velo de novia).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-popup" class="info-popup">
+        <div class="info-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <div id="info-text">
+                <!-- Aquí se mostrará la información de los hongos -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/code.js"></script> <!-- Aquí se incluirá el script JS -->
+</body>
+
+</html>

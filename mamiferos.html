@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Mamíferos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/stylesMamiferos.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Mamíferos</h1>
+        <img src="" alt="">
+        <nav>
+            <i class="fas fa-home"></i> <a href="index.html">Inicio</a>
+            <i class="fas fa-dove"></i> <a href="aves.html">Aves</a>
+            <i class="fas fa-paw"></i> <a href="mamiferos.html">Mamíferos</a>
+            <i class="fas fa-bug"></i> <a href="pagina_abejas.html">Insectos</a>
+            <i class="fas fa-seedling"></i> <a href="hongos.html">Hongos</a> 
+            <!--<i class="fas fa-users"></i> <a href="">Sobre Nosotros</a>-->
+        </nav>
+        
+        
+    </header>
+
+    <main>
+        <section id="mamiferos">
+            <div class="fondo">
+            <h2>Mamíferos</h2>
+            </div>
+            <div class="catalogo">
+                <div class="mamifero">
+                    <h3>Canis latrans</h3>
+                    <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/253372425/original.jpg" alt="Canis latrans">
+                    <button class="descripcion-btn" data-modal="myModal1">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Dasypus novemcinctus</h3>
+                    <img src="img/Dasypus novemcinctus (Armadillo de nueve bandas) (1).png" alt="Dasypus novemcinctus">
+                    <button class="descripcion-btn" data-modal="myModal2">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Nasua narica</h3>
+                    <img src="img/Nasua narica(Coatí) (1).png" alt="Nasua narica">
+                    <button class="descripcion-btn" data-modal="myModal3">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Procyon lotor</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/1200px-Procyon_lotor_%28Common_raccoon%29.jpg" alt="Procyon lotor">
+                    <button class="descripcion-btn" data-modal="myModal4">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Eira barbara</h3>
+                    <img src="img/Eira barbara (Tayra) (1).jpeg" alt="Eira barbara">
+                    <button class="descripcion-btn" data-modal="myModal5">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Didelphis marsupialis</h3>
+                    <img src="https://multimedia20stg.blob.core.windows.net/especiesreduced/2133Didelphis-marsupialis-Guayaquil-por-Leo-ALava.jpg" alt="Didelphis marsupialis">
+                    <button class="descripcion-btn" data-modal="myModal6">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Glossophaga soricina</h3>
+                    <img src="https://lh6.googleusercontent.com/proxy/5SRjRuUzYzr90BxDQhY4kgL0SP_u-1BjyCKc5uxZ5qksB_u486AvHf5rTtfhcXilcYFy4cB1I-FTYIrZgIjMcUDLgryoUMq7YWPL53dQTTlieZe6CTT9yJ3NoyfBiYi5lNdH5Y63_brrfEC6RFfC2jYBz54yA6-9Ppk-cJESQQeSmz-k55o" alt="Glossophaga soricina">
+                    <button class="descripcion-btn" data-modal="myModal7">Descripción</button>
+                </div>
+
+                <div class="mamifero">
+                    <h3>Rhogeessa bickhami</h3>
+                    <img src="img/Rhogeessa bickhami (Murcielaguitos amarillos) (1).jpeg" alt="Rhogeessa bickhami">
+                    <button class="descripcion-btn" data-modal="myModal8">Descripción</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="carousel">
+        <button class="prev" onclick="showPrevImage()">&#10094;</button>
+        <div class="carousel-images">
+            <img src="https://wallpapers.com/images/hd/green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt="Imagen 1">
+            <img src="https://wallpapers.com/images/hd/hd-nature-snowy-mountains-ngdfb9h966h4z3le.jpg" alt="Imagen 2">
+            <img src="https://c.wallhere.com/photos/d7/1d/1920x1080_px_landscape_nature-1106031.jpg!d" alt="Imagen 3">
+            <img src="https://wallpapers.com/images/hd/green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt="Imagen 1">
+            <img src="https://wallpapers.com/images/hd/hd-nature-snowy-mountains-ngdfb9h966h4z3le.jpg" alt="Imagen 2">
+            <img src="https://c.wallhere.com/photos/d7/1d/1920x1080_px_landscape_nature-1106031.jpg!d" alt="Imagen 3">
+            <img src="https://wallpapers.com/images/hd/green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt="Imagen 1">
+            <img src="https://wallpapers.com/images/hd/hd-nature-snowy-mountains-ngdfb9h966h4z3le.jpg" alt="Imagen 2">
+            <img src="https://c.wallhere.com/photos/d7/1d/1920x1080_px_landscape_nature-1106031.jpg!d" alt="Imagen 3">
+            <img src="https://wallpapers.com/images/hd/green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt="Imagen 1">
+            <img src="https://wallpapers.com/images/hd/hd-nature-snowy-mountains-ngdfb9h966h4z3le.jpg" alt="Imagen 2">
+            <img src="https://c.wallhere.com/photos/d7/1d/1920x1080_px_landscape_nature-1106031.jpg!d" alt="Imagen 3">
+            <img src="https://wallpapers.com/images/hd/green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt="Imagen 1">
+            <img src="https://wallpapers.com/images/hd/hd-nature-snowy-mountains-ngdfb9h966h4z3le.jpg" alt="Imagen 2">
+            <img src="https://c.wallhere.com/photos/d7/1d/1920x1080_px_landscape_nature-1106031.jpg!d" alt="Imagen 3">
+            
+        </div>
+        <button class="next" onclick="showNextImage()">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="indicator" onclick="goToImage(0)"></span>
+            <span class="indicator" onclick="goToImage(1)"></span>
+            <span class="indicator" onclick="goToImage(2)"></span>
+        </div> 
+    </div>
+    
+
+    <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; Proyecto de Ciencias</p>
+        <div class="participants">
+            <h4>Participantes</h4>
+            <p>Daniel Zúñiga</p>
+            <p>Fabian García</p>
+            <p>Ricardo Charpentier</p>
+            <p>Frank Raffensperger</p>
+        </div>
+
+    </div>
+    </footer>
+    
+
+    <!-- Modales -->
+    <div id="myModal1" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/253372425/original.jpg" alt="Canis latrans">
+            <div>
+                <h3>Canis latrans</h3>
+                <p><strong>Nicho ecológico:</strong> El coyote es un carnívoro omnívoro oportunista, lo que significa que se alimenta tanto de animales pequeños (roedores, aves) como de frutos y restos de comida. Es un predador generalista, capaz de adaptarse a una variedad de ambientes.
+                    <br><strong>Hábitat:</strong> Se encuentra en una gran diversidad de hábitats, incluyendo praderas, bosques, montañas y áreas urbanas. Se adapta muy bien a las zonas suburbanas y urbanas, lo que le ha permitido expandirse en muchas regiones de América del Norte.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal2" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Dasypus_novemcinctus.jpg" alt="Dasypus novemcinctus">
+            <div>
+                <h3>Dasypus novemcinctus</h3>
+                <p><strong>Nicho ecológico:</strong> Es un insectívoro y omnívoro. Se alimenta principalmente de insectos (especialmente hormigas y termitas), pero también consume frutas, raíces y pequeños invertebrados. Es conocido por su habilidad para excavar.
+                    <br><strong>Hábitat:</strong> Se encuentra en regiones de América del Norte, Central y del Sur, preferentemente en áreas de sabanas, praderas y bosques secos. Prefiere terrenos suaves y con vegetación densa donde pueda excavar fácilmente.</p>
+            </div>            
+        </div>
+    </div>
+    
+    <div id="myModal3" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://static.inaturalist.org/photos/346426205/medium.jpg" alt="Nasua narica">
+            <div>
+                <h3>Nasua narica</h3>
+                <p><strong>Nicho ecológico:</strong> El coatí es un omnívoro que se alimenta de frutas, insectos, pequeños vertebrados y huevos. Es un animal arbóreo y terrestre, con un comportamiento social muy marcado.
+                    <br><strong>Hábitat:</strong> Se encuentra en bosques tropicales y subtropicales de América Central y el norte de América del Sur. Prefiere áreas de vegetación densa, tanto en tierras bajas como en zonas montañosas.  </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal4" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/1200px-Procyon_lotor_%28Common_raccoon%29.jpg" alt="Procyon lotor">
+            <div>
+                <h3>Procyon lotor</h3>
+                <p><strong>Nicho ecológico:</strong> El mapache es un omnívoro muy adaptativo. Se alimenta de frutas, insectos, peces, pequeños vertebrados y restos de comida humana. Es conocido por su destreza para manipular objetos, lo que le permite acceder a alimentos en lugares difíciles.
+                    <br><strong>Hábitat:</strong> Habita en una variedad de ecosistemas, desde bosques y zonas montañosas hasta áreas urbanas. Prefiere estar cerca de fuentes de agua como ríos, arroyos y lagos, donde pueda buscar alimento.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal5" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/60541018/original.jpeg" alt="Eira barbara">
+            <div>
+                <h3>Eira barbara</h3>
+                <p><strong>Nicho ecológico:</strong> La tayra es un carnívoro que se alimenta de pequeños mamíferos, aves, reptiles, frutas y otros alimentos vegetales. Tiene un comportamiento semi-arbóreo y es un excelente trepador.
+                    <br><strong>Hábitat:</strong> Se encuentra en bosques tropicales y subtropicales de América Central y del Sur. Prefiere áreas de selva densa, aunque también puede habitar bosques más secos y montañosos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal6" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://multimedia20stg.blob.core.windows.net/especiesreduced/2133Didelphis-marsupialis-Guayaquil-por-Leo-ALava.jpg" alt="Didelphis marsupialis">
+            <div>
+                <h3>Didelphis marsupialis</h3>
+                <p><strong>Nicho ecológico:</strong> Es un omnívoro oportunista, alimentándose de frutas, insectos, pequeños mamíferos, aves, y reptiles. Su capacidad para adaptarse a diferentes fuentes de alimento le permite ocupar una variedad de nichos.
+                    <br><strong>Hábitat:</strong> Se distribuye en América Central y América del Sur, donde habita en bosques tropicales, subtropicales y áreas urbanas. Es un animal muy adaptable y puede vivir en zonas cercanas a asentamientos humanos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal7" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://lh6.googleusercontent.com/proxy/5SRjRuUzYzr90BxDQhY4kgL0SP_u-1BjyCKc5uxZ5qksB_u486AvHf5rTtfhcXilcYFy4cB1I-FTYIrZgIjMcUDLgryoUMq7YWPL53dQTTlieZe6CTT9yJ3NoyfBiYi5lNdH5Y63_brrfEC6RFfC2jYBz54yA6-9Ppk-cJESQQeSmz-k55o" alt="Glossophaga soricina">
+            <div>
+                <h3>Glossophaga soricina</h3>
+                <p><strong>Nicho ecológico:</strong> Es un murciélago nectarívoro, especializado en la polinización. Se alimenta de néctar de flores y frutas, además de consumir algo de insectos. Su rol ecológico es crucial para la polinización de varias especies vegetales.
+                    <br><strong>Hábitat:</strong> Habita en áreas tropicales y subtropicales de América Central y del Sur. Prefiere zonas de selva o bosques densos donde abundan las flores con néctar.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal8" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/30096689/large.jpeg" alt="Rhogeessa bickhami">
+            <div>
+                <h3>Rhogeessa bickhami</h3>
+                <p><strong>Nicho ecológico:</strong> Es un murciélago insectívoro, que se alimenta principalmente de insectos como polillas, escarabajos y otros insectos nocturnos. Juega un papel importante en el control de poblaciones de insectos.
+                    <br><strong>Hábitat:</strong> Se encuentra en zonas de América Central, especialmente en regiones montañosas y boscosas. Habita en cavernas o en áreas con vegetación densa, donde puede encontrar una gran cantidad de insectos para alimentarse.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        // Función para abrir el modal correspondiente
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        // Obtener los botones de descripción
+        var buttons = document.querySelectorAll(".descripcion-btn");
+
+        // Añadir evento click a cada botón para abrir su modal correspondiente
+        buttons.forEach(function(button) {
+            button.onclick = function() {
+                openModal(button.getAttribute("data-modal"));
+            };
+        });
+
+        // Obtener los elementos <span> que cierran los modales
+        var closeButtons = document.getElementsByClassName("close");
+
+        // Añadir evento click a cada botón de cerrar
+        Array.from(closeButtons).forEach(function(button) {
+            button.onclick = function() {
+                var modal = button.parentElement.parentElement.parentElement; // Obtener el modal correspondiente
+                modal.style.display = "none";
+            };
+        });
+
+        // Cerrar el modal si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        };
+
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            const offset = -currentIndex * 40; // Cambia el desplazamiento
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+    </script>
+</body>
+</html>

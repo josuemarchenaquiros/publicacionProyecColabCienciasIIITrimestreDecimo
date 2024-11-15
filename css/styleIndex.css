@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://wallpapers.com/images/featured/1920x1080-hd-flor-qc7kg02kw4xvd556.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+}
+
+.container {
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 220px;
+    text-decoration: none; 
+    transition: transform 0.2s; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#tituloPrincipal {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#parrafo {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: auto;
+}

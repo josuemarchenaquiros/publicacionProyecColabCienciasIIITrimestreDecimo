@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f4f8, #d9e7ee);
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapertip.com%2Fwmimgs%2F39-393961_ultra-hd-forest-4k.jpg&f=1&nofb=1&ipt=db4f2b78bfba583bff1e80406dce5bccf5063566c9b0bfa32c1de006103b6026&ipo=images');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav i {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    margin: 5px;
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+header nav a:hover {
+    background-color: #84c1f3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.indicator.active {
+    background-color: #717171;
+}
+
+.fondo {
+    background: linear-gradient(to right, #8f8785, #34ac44);
+    height: 100px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mamifero {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.descripcion-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.descripcion-btn:active {
+    transform: scale(0.95);
+}
+
+.mamifero:hover {
+    transform: scale(1.05);
+}
+
+.mamifero img {
+    max-width: 100%;
+    max-height: 300px; /* Limitar la altura de la imagen */
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Esto asegurará que la imagen se recorte si es necesario para ajustarse al tamaño */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(to right, #4f5255, #20d42f);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .mamifero {
+        width: calc(45% - 40px); /* Dos elementos por fila */
+    }
+
+    header nav a {
+        padding: 10px 15px;
+        margin: 5px;
+    }
+
+    .prev, .next {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mamifero {
+        width: calc(100% - 40px); /* Un elemento por fila */
+    }
+
+    .carousel-images img {
+        max-height: 200px; /* Ajustar altura en móviles */
+    }
+}

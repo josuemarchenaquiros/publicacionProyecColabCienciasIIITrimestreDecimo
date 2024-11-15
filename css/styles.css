@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    gap: 1vw;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+
+    animation: cambiarColor 20s ease-in-out infinite; /* Solo la animación de fondo */
+
+}
+
+header * {
+    animation: cambiarColorNegro 20s ease-in-out infinite; /* Cambiar el color de los textos */
+    color: #000000; /* Color inicial del texto */
+}
+
+/* Animación para cambiar el color de fondo de verde a blanco */
+@keyframes cambiarColor {
+    0% {
+        background-color: white; /* Verde inicial */
+    }
+    50% {
+        background-color: #66bb6a; /* Blanco en el medio */
+    }
+    100% {
+        background-color: white; /* Regresa al verde inicial */
+    }
+}
+
+/* Animación para cambiar el color del texto de negro a blanco */
+@keyframes cambiarColorNegro {
+    0% {
+        color: #000000; /* Negro inicial */
+    }
+    50% {
+        color: #ffffff; /* Blanco en el medio */
+    }
+    100% {
+        color: #000000; /* Regresa al negro inicial */
+    }
+}
+
+
+header img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease;
+    animation: bounce 1s ease-in-out infinite; /* Aplica la animación de rebote */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    30% {
+        transform: translateY(-10px); /* Subir un poco */
+    }
+    50% {
+        transform: translateY(0); /* Regresar al centro */
+    }
+    70% {
+        transform: translateY(-5px); /* Subir menos */
+    }
+    100% {
+        transform: translateY(0); /* Regresar al centro */
+    }
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    padding: 1vh;
+    gap: 1vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+header nav a:hover,
+header img:hover {
+    transform: scale(1.2);
+}
+
+#Landing {
+    background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-group-of-different-colored-birds-on-a-branch-picture-image_3425217.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.274);
+    background-blend-mode: darken;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white !important;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#Landing h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 10vw;
+    transition: all 0.3s ease;
+    cursor:context-menu;
+}
+
+#Landing h1:hover {
+    font-size: 6rem;
+}
+
+#Landing p {
+    font-size: 1rem;
+    margin-left: 10.5vw;
+    transition: all 0.3s ease;
+}
+
+#Landing button {
+    background: transparent;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 10vw;
+    height: 5vh;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    transition: all 0.3s ease;
+}
+
+#Landing button:hover {
+    background-color: orange;
+    color: black;
+    width: 30vw;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    margin-top: -8vh;
+}
+
+#IntroEspecies {
+    display: flex;
+    height: 46vh;
+    min-width: 50vw;
+    background-image: url('https://img.freepik.com/fotos-premium/hilera-pajaros-coloridos-que-dice-pajaro-azul_922063-53.jpg');
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-color: rgba(247, 247, 247, 0.596);
+    background-blend-mode: darken;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 60px;
+}
+
+#IntroMensaje {
+    display: flex;
+    height: 46vh;
+    min-width: 50vw;
+    background-color: rgb(0, 114, 57);
+    color: white;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 60px;
+}
+
+#especies {
+    background: linear-gradient(
+        to right,
+        #3e8e41,
+        #2c752e,
+        #035207,
+        #388E3C
+    );
+}
+
+#especies h2 {
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1vh;
+
+    animation: bounce 2s ease-in-out infinite; /* Aplica la animación de rebote */
+
+}
+
+hr{
+    animation: bounce 2s ease-in-out infinite; /* Aplica la animación de rebote */
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 50vh;
+    max-height: 50vh;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.card img {
+    max-width: 24vw;
+    min-width: 24vw;
+    height: 30vh;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 2vh;
+    object-position: 0px -20px;  /* 0px horizontal (izquierda), 20px hacia abajo desde el top */
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: 5% auto;
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 80vh;
+    max-height: 80vh;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-content img {
+    width: 92%;
+    height: 45vh;
+    border-radius: 10px;
+    object-fit: cover !important;
+    object-position: center 10%;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 700%;
+    height: 60vh;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center 10%;
+}   
+
+.footer {
+    background: linear-gradient(
+        to right,
+        #3e8e41,
+        #2c752e,
+        #035207,
+        #388E3C
+    );
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.participants {
+    margin: 20px 0;
+}
+
+.participants h4 {
+    margin-bottom: 10px;
+}
+
+.participants ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.participants li {
+    margin: 5px 0;
+}
+
+.description {
+    font-style: italic;
+    margin: 15px 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ffcc00;
+}
+
+.contenedor {
+    position: absolute;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    scale: 0.5;
+    overflow-y: hidden;
+    
+
+}
+
+.imagen {
+    position: absolute;
+    left: -100%; /* Empezamos fuera de la pantalla por la izquierda */
+    opacity: 1;
+    animation: mover 5s ease-in-out infinite, desaparecer 5s 7s ease-out infinite;
+    filter: drop-shadow(
+        0px 0px 10px rgba(0, 0, 0, 0.3)
+    );
+    overflow-y: hidden;
+    
+}
+
+/* Personaliza el contorno de la barra de desplazamiento (más gruesa) */
+::-webkit-scrollbar {
+    width: 20px;  /* Ancho de la barra vertical más grueso */
+    height: 20px; /* Altura de la barra horizontal más gruesa */
+}
+
+/* Personaliza el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #d9f7d9; /* Color suave verde claro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Personaliza el "thumb" (parte que se mueve de la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+    background-color: #66bb6a; /* Verde más intenso para el "thumb" */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 5px solid #ffffff; /* Bordes blancos para un buen contraste */
+}
+
+/* Personaliza el "thumb" cuando está en hover (cuando pasas el ratón encima) */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #388e3c; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Personaliza la barra de desplazamiento horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 20px; /* Hacer la barra horizontal más gruesa */
+}
+
+::-webkit-scrollbar-track-horizontal {
+    background-color: #d9f7d9;
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+    background-color: #66bb6a;
+}
+
+
+/* Animación para mover la imagen de izquierda a derecha */
+@keyframes mover {
+    0% {
+        left: -50%; /* Empezamos fuera de la pantalla */
+    }
+    50% {
+        left: 50%; /* Llega al centro de la pantalla */
+        transform: translateX(-50%); /* Centrado exacto */
+    }
+    100% {
+        left: 100%; /* Termina fuera de la pantalla por la derecha */
+
+    }
+}
+
+/* Animación para desaparecer la imagen */
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+    #Landing h1 {
+        font-size: 3rem; /* Tamaño de fuente más pequeño */
+        margin-left: 5vw; /* Ajustar margen */
+    }
+
+    #Landing p {
+        margin-left: 5vw; /* Ajustar margen */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    #Landing button {
+        width: 80vw; /* Ajustar ancho del botón */
+        margin-left: 10vw; /* Centrando el botón */
+    }
+
+    #introduction {
+        flex-direction: column; /* Cambiar a columna en móvil */
+        align-items: center; /* Centrar elementos */
+    }
+
+    #IntroEspecies {
+        background-color: white !important;
+        background-image: none !important;
+        min-width: 100%; /* Asegurarse de que ocupen todo el ancho */
+        padding: 20px; /* Ajustar padding */
+        min-height: 30vh;
+    }
+
+    .card {
+        min-width: 300px; /* Hacer tarjetas más pequeñas */
+        margin: 10px auto; /* Centrar tarjetas */
+    }
+
+    .card img {
+        width: 80vw; /* Hacer las imágenes más grandes */
+        height: 30vh; /* Ajustar altura automáticamente */
+    }
+
+    #especies h2 {
+        font-size: 2.5rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    #Landing h1 {
+        font-size: 4rem; /* Tamaño de fuente intermedio */
+        margin-left: 7vw; /* Ajustar margen */
+    }
+
+    #Landing button {
+        width: 80vw; /* Ajustar ancho del botón */
+    }
+
+    .card {
+        min-width: 45vw; /* Hacer tarjetas más anchas */
+        max-width: 45vw; /* Limitar ancho */
+    }
+
+    .card img {
+        width: 60vw; /* Ajustar imagen */
+        height: auto; /* Altura automática */
+    }
+
+    #especies h2 {
+        font-size: 3rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 901px) {
+    .card {
+        min-width: 400px; /* Mantener un ancho mínimo */
+        max-width: 500px; /* Limitar ancho */
+    }
+}

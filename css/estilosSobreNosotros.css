@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    gap: 1vw;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    padding: 1vh;
+    gap: 1vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+header nav a:hover,
+header img:hover {
+    transform: scale(1.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.landing {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+
+}
+
+.landing img {
+    object-fit: cover;
+    object-position: top;
+    width: 100vw;
+    height: 50vh;
+}
+
+/* Estilos globales para la estructura */
+/* Estilos globales para la estructura */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 10vh;
+    background: linear-gradient(to right, #00ec4f, #ffffff);
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+    min-height: 100vh; /* Asegura que ocupe toda la altura visible */
+    overflow: visible !important;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: visible !important;
+    padding: 7vh;
+}
+
+/* Estilos para las tarjetas de los participantes */
+.participants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea las tarjetas de los participantes en el centro */
+    gap: 30px; /* Espacio entre las tarjetas */
+    width: 100%;
+    max-width: 900px; /* Máximo ancho para que las tarjetas no se estiren demasiado */
+    margin-top: 20px;
+}
+
+.participant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro de la tarjeta */
+    justify-content: center;
+    width: 150px; /* Establece un ancho fijo para las tarjetas */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.participant-card img {
+    width: 100px; /* Establece el tamaño de la imagen */
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin-bottom: 10px;
+}
+
+.participant-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.participant-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.participant-card:hover {
+    transform: scale(1.05);
+}
+
+.participant-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.participant-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.participant-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #66bb6a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
